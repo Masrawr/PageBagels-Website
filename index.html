@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: Your business name and search-result description. -->
+  <title>Page Bagels &amp; Deli | Your neighborhood deli</title>
+  <meta name="description"
+    content="Meet your neighborhood bagel shop and deli. Explore our breakfast, lunch, and catering menus, find our hours, and order delivery.">
+  <meta name="theme-color" content="#182c37">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- EDIT: Remove this notice when your actual information is ready. -->
+  <div class="announcement">A little something for every appetite. <span>Sample menu &amp; store details — update before
+      publishing.</span></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- EDIT: Business name; also update the footer. -->
+      <a class="brand" href="#home" aria-label="Page Bagels and Deli home">
+        <span class="brand-mark" aria-hidden="true">PB<span>✦</span></span>
+        <span class="brand-name">PAGE BAGELS<span>&amp; DELI</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span
+          aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#menu">Deli menu</a>
+        <a href="#catering">Catering</a>
+        <a href="#about">Our shop</a>
+        <a href="#visit">Visit &amp; contact</a>
+        <a class="button button-small" href="#order">Order online <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-star" aria-hidden="true">✦</span> YOUR NEIGHBORHOOD, YOUR DELI</p>
+        <!-- EDIT: Your headline and introduction. -->
+        <h1 id="hero-heading">Good mornings.<br>Great sandwiches.<br><em>Come on in.</em></h1>
+        <p class="hero-description">Your everyday stop for bagels, breakfast favorites, and a lunch worth looking
+          forward to. Pull up a chair. We’ll take care of the rest.</p>
+        <div class="button-row">
+          <a class="button" href="#menu">Explore the menu <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#visit">Find our shop <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-footnote"><span aria-hidden="true">✦</span> Breakfast, lunch &amp; a little neighborhood love.
+        </div>
+      </div>
+      <figure class="hero-image">
+        <!-- EDIT: Replace store-placeholder.svg with your store photo's filename. Update alt text too. -->
+        <img src="store-placeholder.svg"
+          alt="Illustrated bagel and coffee placeholder; replace with a photo of your deli" width="800" height="900">
+        <div class="photo-stamp" aria-hidden="true">THE GOOD<br>STUFF<br><span>STARTS HERE</span></div>
+        <figcaption>YOUR STORE PHOTO GOES HERE <span aria-hidden="true">↗</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="feature-strip" aria-label="What we serve">
+      <div class="container"><span>Bagels &amp; breakfast</span><span aria-hidden="true">✦</span><span>Deli
+          classics</span><span aria-hidden="true">✦</span><span>Catering for your crew</span><span
+          aria-hidden="true">✦</span><span>Your daily go-to</span></div>
+    </div>
+
+    <section class="section container" id="menu" aria-labelledby="menu-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE EVERYDAY FAVORITES</p>
+          <h2 id="menu-heading">Made for your appetite.</h2>
+        </div>
+        <p>From your first coffee to your lunch break.<br><span class="sample-note">All items and prices below are
+            samples.</span></p>
+      </div>
+      <!-- EDIT: Keep each filter's data-filter value matched to its menu group's data-category. -->
+      <div class="menu-filters" role="group" aria-label="Filter deli menu">
+        <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">Full menu</button>
+        <button type="button" class="filter-button" data-filter="breakfast" aria-pressed="false">Bagels &amp;
+          breakfast</button>
+        <button type="button" class="filter-button" data-filter="sandwiches" aria-pressed="false">Sandwiches</button>
+        <button type="button" class="filter-button" data-filter="sides" aria-pressed="false">Sides &amp; drinks</button>
+      </div>
+      <p class="sr-only" id="menu-status" role="status" aria-live="polite"></p>
+      <div class="menu-grid">
+        <!-- EDIT: Duplicate a menu-item article to add an item. All names, descriptions, and prices are below. -->
+        <section class="menu-group" data-category="breakfast" aria-labelledby="breakfast-heading">
+          <div class="menu-group-heading"><span class="category-number">01</span>
+            <h3 id="breakfast-heading">Bagels &amp; breakfast</h3>
+          </div>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>Bagel with cream cheese</h4><span class="price">$4.50</span>
+            </div>
+            <p>Your choice of bagel with a generous spread of cream cheese.</p>
+          </article>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>Bacon, egg &amp; cheese</h4><span class="price">$7.50</span>
+            </div>
+            <p>A breakfast classic on your favorite bagel or roll.</p>
+          </article>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>Sausage, egg &amp; cheese</h4><span class="price">$7.50</span>
+            </div>
+            <p>Eggs, sausage, and melted cheese. A good start to any day.</p>
+          </article>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>The veggie breakfast</h4><span class="price">$7.00</span>
+            </div>
+            <p>Eggs, peppers, onions, and cheese on a bagel or roll.</p>
+          </article>
+          <p class="menu-extra">Make it yours: add your bagel choices, spreads, and extras here.</p>
+        </section>
+        <section class="menu-group" data-category="sandwiches" aria-labelledby="sandwiches-heading">
+          <div class="menu-group-heading"><span class="category-number">02</span>
+            <h3 id="sandwiches-heading">Deli sandwiches</h3>
+          </div>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>The turkey club</h4><span class="price">$11.50</span>
+            </div>
+            <p>Turkey, bacon, lettuce, tomato, and mayo on your choice of bread.</p>
+          </article>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>Italian hero</h4><span class="price">$12.50</span>
+            </div>
+            <p>Ham, salami, provolone, lettuce, tomato, and Italian dressing.</p>
+          </article>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>Grilled chicken sandwich</h4><span class="price">$11.00</span>
+            </div>
+            <p>Grilled chicken, lettuce, tomato, and your favorite dressing.</p>
+          </article>
+          <article class="menu-item">
+            <div class="item-heading">
+              <h4>Build your own</h4><span class="price">From $9.00</span>
+            </div>
+            <p>Pick your bread, deli meat, cheese, and toppings.</p>
+          </article>
+          <p class="menu-extra">Add your available breads, toppings, and substitutions here.</p>
+        </section>
+        <section class="menu-group menu-group-wide" data-category="sides" aria-labelledby="sides-heading">
+          <div class="menu-group-heading"><span class="category-number">03</span>
+            <h3 id="sides-heading">A little on the side</h3>
+          </div>
+          <div class="side-items">
+            <article class="menu-item">
+              <div class="item-heading">
+                <h4>Hot coffee</h4><span class="price">$2.50</span>
+              </div>
+              <p>Small · add your sizes and options.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-heading">
+                <h4>Iced coffee</h4><span class="price">$3.50</span>
+              </div>
+              <p>Small · add your flavors and options.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-heading">
+                <h4>Deli salads</h4><span class="price">$4.00</span>
+              </div>
+              <p>Sample side serving · list your selections.</p>
+            </article>
+            <article class="menu-item">
+              <div class="item-heading">
+                <h4>Chips &amp; bottled drinks</h4><span class="price">$2.00</span>
+              </div>
+              <p>Starting price · list your selections.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+      <p class="menu-disclaimer">Replace this line with your tax information, pricing policy, and any menu notes. Please
+        tell us about any food allergies when ordering.</p>
+    </section>
+
+    <section class="catering-section" id="catering" aria-labelledby="catering-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MORE PEOPLE. MORE GOOD FOOD.</p>
+            <h2 id="catering-heading">Bring the deli to the party.</h2>
+          </div>
+          <p>Meetings, family gatherings, and everything in between.<br>Let us help you feed the whole table.</p>
+        </div>
+        <!-- EDIT: Catering packages, serving sizes, descriptions, and prices. -->
+        <div class="catering-grid">
+          <article class="catering-card"><span class="card-label">THE MORNING MEETING</span>
+            <h3>Bagel breakfast box</h3>
+            <p>An assortment of bagels with cream cheese and butter, ready to share.</p>
+            <div class="catering-price"><span>Serves 10 · sample</span><strong>$45</strong></div>
+          </article>
+          <article class="catering-card"><span class="card-label">THE CROWD PLEASER</span>
+            <h3>Deli sandwich platter</h3>
+            <p>A mix of deli favorites, cut and arranged for an easy lunch spread.</p>
+            <div class="catering-price"><span>Serves 10 · sample</span><strong>$95</strong></div>
+          </article>
+          <article class="catering-card"><span class="card-label">THE FINISHING TOUCH</span>
+            <h3>Salads &amp; sides tray</h3>
+            <p>Round out your order with your choice of house salads and sides.</p>
+            <div class="catering-price"><span>Serves 10 · sample</span><strong>$35</strong></div>
+          </article>
+        </div>
+        <div class="catering-bottom">
+          <p><strong>A gathering on the calendar?</strong><br>Add your advance notice, minimum order, and pickup or
+            delivery details here.</p><a class="button button-cream" href="#visit">Ask about catering <span
+              aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container about-section" id="about" aria-labelledby="about-heading">
+      <div class="about-emblem" aria-hidden="true"><span>YOUR DAILY</span><strong>bagel<br>&amp;
+          beyond.</strong><span>NEIGHBORHOOD STOP</span></div>
+      <div>
+        <p class="eyebrow">A PLACE AT THE COUNTER</p>
+        <h2 id="about-heading">A familiar face.<br>Your favorite order.</h2>
+        <p class="about-copy">This is your space to tell the story of your deli. Introduce your family, share what
+          inspired the shop, and tell your neighbors what makes it special.</p>
+        <p class="about-copy">Add a few words about your food, your community, or the little things that keep people
+          coming back. Make it sound like you.</p><a class="text-link" href="#visit">We’d love to see you <span
+            aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="order-section" id="order" aria-labelledby="order-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR FAVORITES, TO YOUR DOOR</p>
+            <h2 id="order-heading">Deli day. Delivered.</h2>
+          </div>
+          <p>Choose your favorite delivery service<br>and we’ll meet you there.</p>
+        </div>
+        <!-- EDIT: Replace each href="#" with your store's real delivery URL. The script automatically enables it. -->
+        <div class="delivery-grid">
+          <a class="delivery-link" href="#" data-delivery="DoorDash" target="_blank"
+            rel="noopener noreferrer"><span><strong>DoorDash</strong><small class="delivery-status">Store link coming
+                soon</small></span><span aria-hidden="true">↗</span></a>
+          <a class="delivery-link" href="#" data-delivery="Uber Eats" target="_blank"
+            rel="noopener noreferrer"><span><strong>Uber Eats</strong><small class="delivery-status">Store link coming
+                soon</small></span><span aria-hidden="true">↗</span></a>
+          <a class="delivery-link" href="#" data-delivery="Grubhub" target="_blank"
+            rel="noopener noreferrer"><span><strong>Grubhub</strong><small class="delivery-status">Store link coming
+                soon</small></span><span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="delivery-note" id="delivery-note" role="status" aria-live="polite">Delivery links will be available
+          here once added.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="visit" aria-labelledby="visit-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COME SAY HELLO</p>
+          <h2 id="visit-heading">Meet you at the deli.</h2>
+        </div>
+        <p>Stop by, give us a call, or plan your next order.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="contact-panel">
+          <h3>Find us</h3>
+          <!-- EDIT: Your street, city, state, and ZIP. -->
+          <address id="store-address">[Street address]<br>[City], [State] [ZIP code]</address>
+          <!-- EDIT: Replace # with your store's map URL. -->
+          <a class="text-link placeholder-link" href="#" data-placeholder="Directions" target="_blank"
+            rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+          <div class="contact-details">
+            <h3>Get in touch</h3>
+            <!-- EDIT: Update BOTH the href and the visible text to match your real phone/email. -->
+            <p><span class="contact-label">PHONE</span><a class="placeholder-link" href="#"
+                data-placeholder="Phone number">[Your phone number]</a></p>
+            <p><span class="contact-label">EMAIL</span><a class="placeholder-link" href="#"
+                data-placeholder="Email address">[Your email address]</a></p>
+            <p class="contact-note">For catering questions, give us a call or send us an email.</p>
+          </div>
+        </div>
+        <div class="hours-panel">
+          <h3>Store hours</h3>
+          <p class="sample-note">Sample hours — replace with your schedule.</p>
+          <!-- EDIT: Your daily opening and closing times. -->
+          <dl class="hours-list">
+
+            <div>
+              <dt>Monday</dt>
+              <dd>24 hours</dd>
+            </div>
+
+            <div>
+              <dt>Tuesday</dt>
+              <dd>24 hours</dd>
+            </div>
+
+            <div>
+              <dt>Wednesday</dt>
+              <dd>24 hours</dd>
+            </div>
+
+            <div>
+              <dt>Thursday</dt>
+              <dd>24 hours</dd>
+            </div>
+
+            <div>
+              <dt>Friday</dt>
+              <dd>24 hours</dd>
+            </div>
+
+            <div>
+              <dt>Saturday</dt>
+              <dd>24 Hours</dd>
+            </div>
+
+            <div>
+              <dt>Sunday</dt>
+              <dd>24 Hours</dd>
+            </div>
+          </dl>
+
+        </div>
+      </div>
+      <p class="contact-feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="footer-brand" href="#home">PAGE BAGELS <span>&amp; DELI</span></a>
+      <p>Good food. Good neighbors.</p><a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> Page Bagels &amp; Deli. All rights reserved.</p>
+      <p>Breakfast · Lunch · Catering</p>
+    </div>
+  </footer>
+</body>
+
+</html>

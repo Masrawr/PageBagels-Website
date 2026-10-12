@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900" fill="none">
+  <title>Bagel and coffee illustration — store photo placeholder</title>
+  <defs>
+    <pattern id="checks" width="100" height="100" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)"><rect width="100" height="100" fill="#e8bf77"/><rect width="50" height="50" fill="#eecf97"/><rect x="50" y="50" width="50" height="50" fill="#eecf97"/></pattern>
+    <radialGradient id="bagel" cx=".45" cy=".4" r=".7"><stop stop-color="#ecc580"/><stop offset=".6" stop-color="#c6833b"/><stop offset="1" stop-color="#96542d"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#6e481f" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="800" height="900" fill="#e3b568"/>
+  <path d="M0 525 800 385V900H0Z" fill="url(#checks)"/>
+  <circle cx="383" cy="471" r="239" fill="#f8f1df" filter="url(#shadow)"/>
+  <circle cx="383" cy="471" r="216" stroke="#dcd3bd" stroke-width="3"/>
+  <ellipse cx="383" cy="489" rx="181" ry="152" fill="#d5c5a1" opacity=".3"/>
+  <path d="M381 308C274 295 205 367 203 457c-2 101 79 172 181 171 96-1 184-61 183-167-1-83-75-142-186-153Z" fill="url(#bagel)" filter="url(#shadow)"/>
+  <path d="M381 315C280 305 219 377 217 446c-3 79 61 148 162 152 89 4 164-61 165-139 1-74-62-140-163-144Z" stroke="#edc885" stroke-width="7" opacity=".65"/>
+  <ellipse cx="383" cy="448" rx="47" ry="38" fill="#754222"/>
+  <ellipse cx="383" cy="456" rx="34" ry="24" fill="#e8dcc2"/>
+  <g stroke="#f5e6bd" stroke-width="6" stroke-linecap="round">
+    <path d="m295 353 6 9m36-26 2 10m65-11-3 10m47 2-4 8m-165 44 8 5m-18 35 8 2m32-40 4 7m49-35 3 9m52-14-2 8m54 3-4 7m25 27-5 4m30 10-7 3m-242 71 9 2m25 42 6-4m28 16 2-8m43 20 1-9m37 8-2-8m41-6-4-6m25-31-6-4m22-38-8-2m-53 61-4-6m-108-18 6-6m26 26 2-9"/>
+  </g>
+  <g transform="translate(510 626) rotate(12)" filter="url(#shadow)">
+    <ellipse cx="55" cy="122" rx="119" ry="25" fill="#b48c4f" opacity=".2"/>
+    <path d="M131 20h15c55 0 59 84 6 90h-26" stroke="#f7f1e2" stroke-width="24"/>
+    <path d="M-32 4h167l-12 98c-4 29-131 30-138 0Z" fill="#f8f1df"/>
+    <ellipse cx="51" cy="7" rx="85" ry="29" fill="#fff9ec"/>
+    <ellipse cx="51" cy="7" rx="73" ry="22" fill="#52382b"/>
+    <path d="M-19 56c38 8 100 8 143-1" stroke="#b74530" stroke-width="8"/>
+    <text x="51" y="92" text-anchor="middle" fill="#182c37" font-family="Georgia,serif" font-size="20" font-weight="bold">PB</text>
+  </g>
+  <path d="m149 186 7 21 21 7-21 7-7 21-7-21-21-7 21-7Z" fill="#f8f1df"/>
+  <path d="m632 373 5 16 16 5-16 5-5 16-5-16-16-5 16-5Z" fill="#f8f1df"/>
+</svg>
